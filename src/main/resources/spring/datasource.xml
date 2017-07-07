@@ -27,6 +27,8 @@
     <jdbc:initialize-database data-source="dataSource">
         <jdbc:script location="org/springframework/batch/core/schema-drop-mysql.sql" />
         <jdbc:script location="org/springframework/batch/core/schema-mysql.sql" />
+        
+        <!-- Uncomment the following line to work around the identical start time bug for repeat step executions -->
         <!-- <jdbc:script location="com/trustwave/batch/SpringBatchDateTimeFix.sql" /> -->
     </jdbc:initialize-database>
     
