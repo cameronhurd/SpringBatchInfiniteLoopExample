@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping>
+   <class name="com.trustwave.batch.domain.Person" table="person">
+      <id name="id" type="long" column="id">
+         <generator class="native"/>
+      </id>
+      <property name="name" column="name" type="string" />
+      <property name="party" column="party" type="string" />
+      <property name="income" column="income" type="big_decimal" />
+      <property name="loadDate" column="load_date" type="string" />
+      <property name="runId" column="run_id" type="long" />
+   </class>
+</hibernate-mapping>
