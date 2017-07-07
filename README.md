@@ -1,10 +1,10 @@
 # SpringBatchInfiniteLoopExample
 
-Setup: 
+Setup:
 Assumes database "test" exists at URL jdbc:mysql://localhost:3306/test with username root and blank password.  
 This can be updated in   mysql datasource setup in src/main/resources/spring/datasource.xml.
 
-Run:
+Run at command line:
 mvn test
 
 The single test should enter an infinite loop, so you'll need to kill it.
